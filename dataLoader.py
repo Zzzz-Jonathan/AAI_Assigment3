@@ -20,5 +20,10 @@ def read_label(filename, label_length=1):
             label.append(int(tmp))
     return label
 
+def read_record(filename, length=22, voter=10):
+    with open(filename, 'r', encoding='utf-8') as file:
+        for line in file:
+            print(line)
+
 #print(len(read_data("traindata.txt")))
 #print(read_label("trainlabel.txt"))
